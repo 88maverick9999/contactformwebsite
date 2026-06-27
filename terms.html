@@ -1,0 +1,621 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-80Z5S1PXPF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-80Z5S1PXPF');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1707805313436185');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1707805313436185&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions | Contact Form Blaster</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        primary: '#10b981',
+                        primaryDark: '#059669',
+                        dark: '#0a0f1a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes fadeUp { from { opacity:0; transform:translateY(30px) } to { opacity:1; transform:translateY(0) } }
+        .animate-fade-up { animation: fadeUp .6s ease both; }
+        .glass { background:rgba(255,255,255,.04); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border:1px solid rgba(255,255,255,.07); }
+        .gradient-border { background:linear-gradient(135deg,#10b981,#3b82f6,#8b5cf6); padding:1.5px; border-radius:1rem; }
+        ::-webkit-scrollbar { width:6px; }
+        ::-webkit-scrollbar-track { background:#0a0f1a; }
+        ::-webkit-scrollbar-thumb { background:linear-gradient(#10b981,#3b82f6); border-radius:99px; }
+
+        /* Sidebar ToC */
+        .toc-link { transition: all .2s ease; border-left: 2px solid transparent; }
+        .toc-link:hover, .toc-link.active { border-left-color: #10b981; color: #10b981; background: rgba(16,185,129,.05); }
+
+        /* Section highlight on hover */
+        .legal-section { transition: background .3s ease, border-color .3s ease; border-left: 3px solid transparent; }
+        .legal-section:hover { background: rgba(255,255,255,.02); border-left-color: rgba(16,185,129,.4); }
+
+        /* Back to top */
+        #scrollTopTos { opacity:0; pointer-events:none; transition:all .3s ease; }
+        #scrollTopTos.show { opacity:1; pointer-events:auto; }
+    </style>
+</head>
+<body class="font-sans text-slate-200 bg-dark antialiased selection:bg-primary selection:text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="bg-dark/95 backdrop-blur-xl border-b border-slate-800/60 py-5 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img class="h-9 w-9 rounded-full object-contain bg-white p-1 transition-transform duration-300 group-hover:scale-110" src="assets/logo/logo.png" alt="Logo" onerror="this.src='assets/logo/logo.svg'">
+                <span class="font-bold text-lg tracking-tight text-white hidden sm:inline">Contact Form Blaster</span>
+            </a>
+            <a href="index.html" class="inline-flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-primary transition-colors">
+                <i class="fa-solid fa-arrow-left text-xs"></i> Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <section class="relative py-16 sm:py-20 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10 text-center animate-fade-up">
+            <div class="inline-flex items-center gap-2 py-1 px-3 rounded-full glass text-emerald-400 text-xs font-bold uppercase tracking-wider mb-6">
+                <i class="fa-solid fa-file-contract"></i> Legal
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-black text-white mb-4">Terms and Conditions</h1>
+            <p class="text-slate-400 text-lg">Company Name: <strong class="text-white">Contact Form Blaster</strong></p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-10">
+
+                <!-- Sidebar Table of Contents -->
+                <aside class="hidden lg:block">
+                    <div class="sticky top-28">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-4 px-3">Table of Contents</h4>
+                        <nav class="space-y-0.5 text-sm max-h-[70vh] overflow-y-auto pr-2">
+                            <a href="#s1" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">1. Acceptance of Terms</a>
+                            <a href="#s2" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">2. Description of Service</a>
+                            <a href="#s3" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">3. User Responsibility</a>
+                            <a href="#s4" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">4. Anti-Spam & Regulatory</a>
+                            <a href="#s5" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">5. Prohibition on Circumvention</a>
+                            <a href="#s6" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">6. Acceptable Use</a>
+                            <a href="#s7" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">7. No Deliverability Guarantee</a>
+                            <a href="#s8" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">8. Intellectual Property</a>
+                            <a href="#s9" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">9. Confidentiality</a>
+                            <a href="#s10" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">10. Logging & Monitoring</a>
+                            <a href="#s11" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">11. Abuse & Audit Rights</a>
+                            <a href="#s12" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">12. Regulatory Cooperation</a>
+                            <a href="#s13" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">13. Independent Relationship</a>
+                            <a href="#s14" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">14. No Warranty of Legality</a>
+                            <a href="#s15" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">15. Indemnification</a>
+                            <a href="#s16" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">16. Limitation of Liability</a>
+                            <a href="#s17" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">17. Chargeback Abuse</a>
+                            <a href="#s18" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">18. Force Majeure</a>
+                            <a href="#s19" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">19. Arbitration</a>
+                            <a href="#s20" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">20. Survival</a>
+                            <a href="#s21" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">21. Contact</a>
+                            <a href="#s22" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">22. SMS Messages and Communications</a>
+                            <a href="#s23" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">23. Prohibited Data Sources</a>
+                            <a href="#s24" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">24. No Targeting of Restricted or Protected Systems</a>
+                            <a href="#s25" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">25. System Interference Prohibition</a>
+                            <a href="#s26" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">26. Enhanced Indemnification for Communications Activity</a>
+                            <a href="#s27" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">27. No Control Over User Targeting or Content</a>
+                            <a href="#s28" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">28. Right to Restrict High-Risk Usage</a>
+                            <a href="#s29" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">29. No Representation of Permitted Contact</a>
+                            <a href="#s30" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">30. Audit and Verification Rights</a>
+                            <div class="my-2 mx-3 border-t border-slate-700/60"></div>
+                            <p class="px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary/70">Affiliate Program</p>
+                            <a href="#s31" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">31. Enrollment</a>
+                            <a href="#s32" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">32. Affiliate Links &amp; Tracking</a>
+                            <a href="#s33" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">33. Commissions</a>
+                            <a href="#s34" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">34. Payment Terms</a>
+                            <a href="#s35" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">35. Prohibited Activities</a>
+                            <a href="#s36" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">36. Marketing Compliance</a>
+                            <a href="#s37" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">37. Intellectual Property</a>
+                            <a href="#s38" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">38. Termination</a>
+                            <a href="#s39" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">39. Modification</a>
+                            <a href="#s40" class="toc-link block py-2 px-3 rounded-r-lg text-slate-400 hover:text-primary">40. Relationship of Parties</a>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="animate-fade-up" style="animation-delay:.15s">
+                    <div class="glass rounded-2xl p-6 sm:p-10 space-y-10">
+
+                        <div id="s1" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">1</span>
+                                Acceptance of Terms
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">By accessing or using the Service, you agree to be bound by these Terms. If you do not agree, you must not use the Service.</p>
+                        </div>
+
+                        <div id="s2" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">2</span>
+                                Description of Service
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">The Service provides software that enables users to submit messages to third-party website contact forms. We do not own, operate, or control third-party websites contacted through the Service. All submissions occur solely at the direction of the user.</p>
+                        </div>
+
+                        <div id="s3" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">3</span>
+                                User Responsibility & Compliance
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed mb-3">You are solely responsible for submission content, recipients, lawful permission to contact, and compliance with all applicable laws. We do not verify consent, permission, or legality.</p>
+                            <p class="text-slate-400 leading-relaxed">User represents and warrants that they have obtained all necessary permissions to contact each website prior to using our service or contact submission.</p>
+                        </div>
+
+                        <div id="s4" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">4</span>
+                                Anti-Spam & Regulatory Allocation
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">You represent that you comply with all applicable anti-spam and data protection laws and have lawful basis for any personal data used. You assume all regulatory risk and liability.</p>
+                        </div>
+
+                        <div id="s5" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">5</span>
+                                Prohibition on Circumvention of Safeguards
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">You may not use the Service to evade, defeat, interfere with, or undermine technical safeguards, access controls, rate limitations, authentication systems, or security measures of third parties.</p>
+                        </div>
+
+                        <div id="s6" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">6</span>
+                                Acceptable Use
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">You may not use the Service for unlawful, abusive, fraudulent, deceptive, malicious, or high-volume abusive activities.</p>
+                        </div>
+
+                        <div id="s7" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">7</span>
+                                No Deliverability Guarantee
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">We do not guarantee submission success, acceptance, response rates, or protection from filtering or blocking.</p>
+                        </div>
+
+                        <div id="s8" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">8</span>
+                                Intellectual Property & Non-Replication
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">The Service is proprietary. You may not reverse engineer, replicate, copy, decompile, disassemble, or create derivative works. Violations may result in termination, injunctive relief, damages, and legal action.</p>
+                        </div>
+
+                        <div id="s9" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">9</span>
+                                Confidentiality & Trade Secrets
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">The Service architecture, workflows, systems, and strategies are confidential trade secrets. Obligations survive termination.</p>
+                        </div>
+
+                        <div id="s10" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">10</span>
+                                Logging & Monitoring
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">We may log IP addresses, submission targets, outreach volume, and usage data for enforcement and compliance purposes.</p>
+                        </div>
+
+                        <div id="s11" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">11</span>
+                                Abuse & Audit Rights
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">We may suspend or terminate accounts and request documentation demonstrating lawful basis in response to complaints or investigations.</p>
+                        </div>
+
+                        <div id="s12" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">12</span>
+                                Regulatory Cooperation
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">We may cooperate with regulators or law enforcement and disclose information as legally required.</p>
+                        </div>
+
+                        <div id="s13" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">13</span>
+                                Independent Relationship
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">No agency, partnership, or employment relationship is created.</p>
+                        </div>
+
+                        <div id="s14" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">14</span>
+                                No Warranty of Legality
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">We make no representation that use of the Service is lawful in any jurisdiction.</p>
+                        </div>
+
+                        <div id="s15" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">15</span>
+                                Indemnification
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">You agree to indemnify and hold harmless the Company from claims, fines, penalties, and legal costs arising from your use.</p>
+                        </div>
+
+                        <div id="s16" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">16</span>
+                                Limitation of Liability
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">The Service is provided "as is." Liability is limited to fees paid in the preceding 30 days. We are not liable for indirect or regulatory damages.</p>
+                        </div>
+
+                        <div id="s17" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">17</span>
+                                Chargeback Abuse
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">Fraudulent chargebacks constitute material breach and may result in recovery actions.</p>
+                        </div>
+
+                        <div id="s18" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">18</span>
+                                Force Majeure
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">We are not liable for interruptions beyond our control.</p>
+                        </div>
+
+                        <div id="s19" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">19</span>
+                                Arbitration & Class Action Waiver
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">Disputes shall be resolved through binding arbitration. You waive class action participation.</p>
+                        </div>
+
+                        <div id="s20" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">20</span>
+                                Survival
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">Indemnification, liability limitations, confidentiality, arbitration, and intellectual property provisions survive termination.</p>
+                        </div>
+
+                        <div id="s21" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">21</span>
+                                Contact
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">To submit legal or support inquiries, visit the Contact page on our Website and submit a request through the form provided there.</p>
+                        </div>
+
+                        <div id="s22" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">22</span>
+                                SMS Messages and Communications
+                            </h3>
+                            <div class="space-y-4 ml-2">
+                                <div class="sub-section pl-5 py-3 rounded-r-lg hover:bg-white/[.02] transition-colors">
+                                    <h4 class="text-base font-semibold text-white mb-2 flex items-center gap-2">
+                                        <span class="text-primary text-xs font-bold">A.</span> Consent to Receive Messages
+                                    </h4>
+                                    <p class="text-slate-400 text-sm leading-relaxed">By opting in through our Service, you expressly consent to receive SMS messages and other electronic communications from us at the phone number you have provided. You represent that you own or have authorized use of the phone number provided for this purpose.</p>
+                                </div>
+                                <div class="sub-section pl-5 py-3 rounded-r-lg hover:bg-white/[.02] transition-colors">
+                                    <h4 class="text-base font-semibold text-white mb-2 flex items-center gap-2">
+                                        <span class="text-primary text-xs font-bold">B.</span> Opt-Out Instructions
+                                    </h4>
+                                    <p class="text-slate-400 text-sm leading-relaxed">You may opt out of receiving SMS messages at any time by replying <strong class="text-white">STOP</strong> to any message you receive. We will honor opt-out requests and remove you from our SMS notification list within a reasonable timeframe.</p>
+                                </div>
+                                <div class="sub-section pl-5 py-3 rounded-r-lg hover:bg-white/[.02] transition-colors">
+                                    <h4 class="text-base font-semibold text-white mb-2 flex items-center gap-2">
+                                        <span class="text-primary text-xs font-bold">C.</span> No Guarantee of Message Delivery
+                                    </h4>
+                                    <p class="text-slate-400 text-sm leading-relaxed">We do not guarantee delivery, timeliness, or receipt of SMS messages. Messages may be delayed, not delivered, or subject to carrier filtering. We are not liable for failed, delayed, or undelivered messages.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="s23" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">23</span>
+                                Prohibited Data Sources
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed mb-4">You may not use the Service with data that has been obtained in violation of applicable law or third-party rights.</p>
+                            <p class="text-slate-400 leading-relaxed mb-3">This includes, without limitation:</p>
+                            <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc pl-6 mb-4">
+                                <li>personal data obtained through scraping, harvesting, or automated collection in violation of a website's terms;</li>
+                                <li>contact information collected from sources that prohibit such use;</li>
+                                <li>purchased, rented, or third-party lists where you cannot demonstrate a valid legal basis for contact.</li>
+                            </ul>
+                            <p class="text-slate-400 leading-relaxed">You are solely responsible for verifying that all data used with the Service has been lawfully obtained and may be lawfully used.</p>
+                        </div>
+
+                        <div id="s24" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">24</span>
+                                No Targeting of Restricted or Protected Systems
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed mb-3">You may not use the Service to interact with, submit to, or target any website, platform, or system that:</p>
+                            <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc pl-6">
+                                <li>prohibits automated submissions, bots, or bulk messaging;</li>
+                                <li>implements safeguards intended to prevent automated or repeated submissions;</li>
+                                <li>restricts or conditions access to human users only.</li>
+                            </ul>
+                        </div>
+
+                        <div id="s25" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">25</span>
+                                System Interference Prohibition
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">You may not use the Service in any manner that interferes with, disrupts, degrades, or places an unreasonable load on any third-party system, network, or infrastructure.</p>
+                        </div>
+
+                        <div id="s26" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">26</span>
+                                Enhanced Indemnification for Communications Activity
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed mb-3">Without limiting any other indemnification obligations, you agree to indemnify, defend, and hold harmless the Company from and against any claims, fines, penalties, investigations, or regulatory actions arising out of or related to:</p>
+                            <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc pl-6">
+                                <li>any messages, submissions, or communications transmitted using the Service;</li>
+                                <li>allegations of unsolicited communications, spam, or improper outreach;</li>
+                                <li>alleged violations of data protection, privacy, or consumer protection laws;</li>
+                                <li>unauthorized interaction with third-party systems.</li>
+                            </ul>
+                        </div>
+
+                        <div id="s27" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">27</span>
+                                No Control Over User Targeting or Content
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed mb-3">The Company does not select, control, review, or approve any recipients, targets, or content transmitted using the Service.</p>
+                            <p class="text-slate-400 leading-relaxed mb-3">You acknowledge that you are solely responsible for:</p>
+                            <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc pl-6">
+                                <li>determining who you contact;</li>
+                                <li>ensuring such contact is lawful;</li>
+                                <li>ensuring the content of all submissions complies with applicable laws.</li>
+                            </ul>
+                        </div>
+
+                        <div id="s28" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">28</span>
+                                Right to Restrict High-Risk Usage
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed mb-3">The Company reserves the right, in its sole discretion, to restrict, suspend, or terminate use of the Service where it determines that such use:</p>
+                            <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc pl-6">
+                                <li>presents elevated legal or regulatory risk;</li>
+                                <li>generates complaints, abuse reports, or legal inquiries;</li>
+                                <li>targets restricted, sensitive, or protected categories of recipients;</li>
+                                <li>or otherwise threatens the integrity of the Service or third-party systems.</li>
+                            </ul>
+                        </div>
+
+                        <div id="s29" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">29</span>
+                                No Representation of Permitted Contact
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">Nothing in the Service, Website, or any related materials shall be interpreted as permission, authorization, or legal basis to contact any individual, business, or system.</p>
+                        </div>
+
+                        <div id="s30" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">30</span>
+                                Audit and Verification Rights
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed mb-3">The Company reserves the right to request documentation or information to verify compliance with these Terms, including but not limited to:</p>
+                            <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc pl-6 mb-4">
+                                <li>the source of contact data;</li>
+                                <li>the legal basis for communications;</li>
+                                <li>records of consent or permission.</li>
+                            </ul>
+                            <p class="text-slate-400 leading-relaxed">Failure to provide such information upon request may result in immediate suspension or termination of access to the Service.</p>
+                        </div>
+
+                        <!-- Affiliate Program Terms Divider -->
+                        <div class="relative flex items-center gap-4 py-4">
+                            <div class="flex-1 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+                            <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full glass text-primary text-xs font-bold uppercase tracking-wider flex-shrink-0">
+                                <i class="fa-solid fa-handshake"></i> Affiliate Program Terms
+                            </div>
+                            <div class="flex-1 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+                        </div>
+
+                        <div id="s31" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">31</span>
+                                Enrollment
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">Participation in the Affiliate Program is subject to approval. We reserve the right to accept or reject any application at our sole discretion for any reason.</p>
+                        </div>
+
+                        <div id="s32" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">32</span>
+                                Affiliate Links &amp; Tracking
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">Affiliates will be provided with unique tracking links. You are responsible for ensuring links are properly formatted. We are not responsible for tracking failures due to incorrect implementation, browser restrictions, ad blockers, or technical issues beyond our control.</p>
+                        </div>
+
+                        <div id="s33" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">33</span>
+                                Commissions
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed mb-3">Commissions are earned only on qualified payments made by referred users. A &ldquo;qualified payment&rdquo; is defined as a completed, non-refunded transaction.</p>
+                            <p class="text-slate-400 leading-relaxed mb-2">Commissions are not earned on:</p>
+                            <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc pl-6 mb-4">
+                                <li>Refunded transactions</li>
+                                <li>Chargebacks or disputed payments</li>
+                                <li>Fraudulent or self-referred accounts</li>
+                            </ul>
+                            <p class="text-slate-400 leading-relaxed">We reserve the right to review and reverse commissions in cases of abuse, fraud, or violation of these terms.</p>
+                        </div>
+
+                        <div id="s34" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">34</span>
+                                Payment Terms
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed mb-3">Commission payouts are issued on a periodic basis (e.g., monthly), subject to a minimum payout threshold. Payments may be delayed to account for refunds, disputes, or fraud checks. Affiliates are responsible for providing accurate payment details.</p>
+                        </div>
+
+                        <div id="s35" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">35</span>
+                                Prohibited Activities
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed mb-2">Affiliates may not:</p>
+                            <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc pl-6 mb-4">
+                                <li>Misrepresent our platform or make false claims</li>
+                                <li>Engage in spam, unsolicited outreach, or illegal marketing practices</li>
+                                <li>Use trademark bidding (e.g., bidding on our brand name in paid ads) without written permission</li>
+                                <li>Self-refer or create fake accounts to generate commissions</li>
+                                <li>Use deceptive redirects, cookie stuffing, or forced clicks</li>
+                            </ul>
+                            <p class="text-slate-400 leading-relaxed">Violation may result in immediate termination and forfeiture of unpaid commissions.</p>
+                        </div>
+
+                        <div id="s36" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">36</span>
+                                Marketing Compliance
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed mb-3">Affiliates are solely responsible for ensuring their promotional methods comply with all applicable laws and regulations, including but not limited to:</p>
+                            <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc pl-6">
+                                <li>Anti-spam laws</li>
+                                <li>Data protection and privacy laws</li>
+                                <li>Advertising disclosure requirements (e.g., clearly disclosing affiliate relationships)</li>
+                            </ul>
+                        </div>
+
+                        <div id="s37" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">37</span>
+                                Intellectual Property (Affiliate)
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">We grant affiliates a limited, non-exclusive, revocable license to use our brand assets solely for promoting our services. You may not modify brand assets or represent yourself as the company.</p>
+                        </div>
+
+                        <div id="s38" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">38</span>
+                                Termination (Affiliate)
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed mb-3">We may suspend or terminate your participation at any time, with or without cause. Upon termination:</p>
+                            <ul class="space-y-2 text-slate-400 text-sm leading-relaxed list-disc pl-6">
+                                <li>All affiliate links must be removed</li>
+                                <li>Any unpaid commissions may be forfeited if termination was due to violations</li>
+                            </ul>
+                        </div>
+
+                        <div id="s39" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">39</span>
+                                Modification (Affiliate)
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">We reserve the right to modify or discontinue the Affiliate Program at any time. Continued participation constitutes acceptance of any updated terms.</p>
+                        </div>
+
+                        <div id="s40" class="legal-section rounded-xl p-5 -mx-2 scroll-mt-28">
+                            <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-3">
+                                <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary text-sm font-black flex-shrink-0">40</span>
+                                Relationship of Parties (Affiliate)
+                            </h3>
+                            <p class="text-slate-400 leading-relaxed">Affiliates are independent contractors. Nothing in this agreement creates any partnership, joint venture, or employment relationship.</p>
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900/60 py-8 border-t border-slate-800/60 text-center">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p class="text-slate-600 text-sm">&copy; 2026 Contact Form Blaster. All rights reserved.</p>
+            <div class="flex gap-6 text-sm text-slate-500">
+                <a href="privacy.html" class="hover:text-primary transition-colors">Privacy Policy</a>
+                <a href="opt-in.html" class="hover:text-primary transition-colors">Opt-in</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button id="scrollTopTos" onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-primary/90 text-white shadow-lg shadow-primary/20 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all backdrop-blur-sm" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up text-sm"></i>
+    </button>
+
+    <script>
+    // Show/hide scroll to top
+    window.addEventListener('scroll', () => {
+        document.getElementById('scrollTopTos').classList.toggle('show', window.scrollY > 400);
+    });
+
+    // Active sidebar link on scroll
+    const sections = document.querySelectorAll('.legal-section');
+    const tocLinks = document.querySelectorAll('.toc-link');
+    const tocObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                tocLinks.forEach(l => l.classList.remove('active'));
+                const id = entry.target.id;
+                const activeLink = document.querySelector(`.toc-link[href="#${id}"]`);
+                if (activeLink) activeLink.classList.add('active');
+            }
+        });
+    }, { threshold: 0.3, rootMargin: '-80px 0px -60% 0px' });
+    sections.forEach(s => tocObserver.observe(s));
+
+    // Smooth scroll for sidebar links
+    document.querySelectorAll('.toc-link').forEach(a => {
+        a.addEventListener('click', e => {
+            const t = document.querySelector(a.getAttribute('href'));
+            if (t) { e.preventDefault(); t.scrollIntoView({ behavior:'smooth', block:'start' }); }
+        });
+    });
+    </script>
+</body>
+</html>
