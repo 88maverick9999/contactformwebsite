@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Contact Form Submission – Automate Outreach at Scale | Contact Form Blaster</title>
+    <meta name="description" content="Submit to thousands of website contact forms in a single campaign. Contact Form Blaster automates bulk contact form submission with AI personalization, CAPTCHA solving, and real-time tracking.">
+    <link rel="canonical" href="https://www.contactformblaster.com/bulk-contact-form-submission">
+    <link rel="alternate" hreflang="en" href="https://www.contactformblaster.com/bulk-contact-form-submission.html">
+    <link rel="alternate" hreflang="fr" href="https://www.contactformblaster.com/fr/soumission-formulaire-contact-en-masse.html">
+    <link rel="alternate" hreflang="es" href="https://www.contactformblaster.com/es/envio-masivo-formulario-contacto.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.contactformblaster.com/bulk-contact-form-submission.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Bulk Contact Form Submission at Scale">
+    <meta property="og:description" content="Submit your message to thousands of website contact forms automatically. AI-powered field detection, CAPTCHA solving, and per-submission billing.">
+    <meta property="og:url" content="https://www.contactformblaster.com/bulk-contact-form-submission.html">
+    <meta property="og:site_name" content="Contact Form Blaster">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: { sans: ['Inter', 'sans-serif'] },
+                colors: { primary: '#6366f1', primaryDark: '#4f46e5', dark: '#0a0f1a' }
+            }
+        }
+    }
+    </script>
+    <style>
+        body { background:#0a0f1a; }
+        .btn-glow:hover { box-shadow:0 0 25px rgba(99,102,241,.5); }
+        .glass { background:rgba(255,255,255,.05); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.08); }
+        .faq-answer { max-height:0; overflow:hidden; transition:max-height .45s cubic-bezier(.25,.46,.45,.94), padding .35s ease; padding:0 1.5rem; }
+        .faq-item.open .faq-answer { max-height:600px; padding:0 1.5rem 1.5rem; }
+        .faq-item.open .faq-chevron { transform:rotate(180deg); }
+        .faq-chevron { transition:transform .35s ease; }
+        .stat-badge { background:rgba(99,102,241,.15); border:1px solid rgba(99,102,241,.3); }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MEASUREMENT_ID');</script>
+</head>
+<body class="font-sans text-slate-100 antialiased overflow-x-hidden">
+
+    <nav id="mainNav" class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-xl border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="/index.html" class="flex items-center gap-3 group">
+                    <img class="h-10 w-10 rounded-full object-contain bg-white p-1 transition-transform group-hover:scale-110" src="/assets/logo/logo.png" alt="Contact Form Blaster" onerror="this.src='/assets/logo/logo.svg'">
+                    <span class="font-bold text-xl tracking-tight text-white">Contact Form Blaster</span>
+                </a>
+                <div class="hidden lg:flex items-center gap-4">
+                    <div class="relative">
+                        <button id="langDropBtn" class="flex items-center gap-1.5 text-sm font-medium text-slate-300 hover:text-white transition-colors px-3 py-1.5 rounded-lg hover:bg-white/5 border border-slate-700/50 hover:border-slate-600">
+                            <span id="langCurrentFlag">🇺🇸</span>
+                            <span id="langCurrentLabel" class="text-xs">EN</span>
+                            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                        </button>
+                        <div id="langDropMenu" class="hidden absolute right-0 top-full mt-2 bg-slate-900/95 backdrop-blur-xl border border-slate-700/60 rounded-xl p-1.5 min-w-[140px] shadow-xl z-50">
+                            <button onclick="switchLang('en')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇺🇸 English</button>
+                            <button onclick="switchLang('fr')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇫🇷 Français</button>
+                            <button onclick="switchLang('es')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇪🇸 Español</button>
+                        </div>
+                    </div>
+                    <a href="https://app.contactformblaster.com/" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Login</a>
+                    <a href="https://app.contactformblaster.com/register" class="btn-glow px-6 py-2.5 text-sm font-semibold rounded-full text-white bg-primary hover:bg-primaryDark shadow-lg transition-all hover:scale-105">Try Free</a>
+                </div>
+                <a href="https://app.contactformblaster.com/register" class="lg:hidden btn-glow px-4 py-2 text-sm font-semibold rounded-full text-white bg-primary">Try Free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="pt-36 pb-20 px-4 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full glass text-primary text-sm font-semibold mb-8">
+                <i class="fa-solid fa-layer-group"></i> Bulk Automation
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+                Bulk Contact Form Submission<br>
+                <span class="text-primary">at Any Scale</span>
+            </h1>
+            <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+                Upload thousands of URLs, write your message once, and let Contact Form Blaster submit to every contact form automatically — with AI personalization and real-time tracking.
+            </p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto mb-10">
+                <div class="stat-badge rounded-xl py-4 px-3 text-center">
+                    <div class="text-2xl font-bold text-primary">10k+</div>
+                    <div class="text-xs text-slate-400 mt-1">Sites per campaign</div>
+                </div>
+                <div class="stat-badge rounded-xl py-4 px-3 text-center">
+                    <div class="text-2xl font-bold text-primary">AI</div>
+                    <div class="text-xs text-slate-400 mt-1">Per-site personalization</div>
+                </div>
+                <div class="stat-badge rounded-xl py-4 px-3 text-center">
+                    <div class="text-2xl font-bold text-primary">Auto</div>
+                    <div class="text-xs text-slate-400 mt-1">CAPTCHA solving</div>
+                </div>
+                <div class="stat-badge rounded-xl py-4 px-3 text-center">
+                    <div class="text-2xl font-bold text-primary">Live</div>
+                    <div class="text-xs text-slate-400 mt-1">Campaign tracking</div>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://app.contactformblaster.com/register" class="btn-glow px-8 py-4 text-base font-semibold rounded-full text-white bg-primary hover:bg-primaryDark shadow-lg transition-all hover:scale-105">Start Free — 25 Credits</a>
+                <a href="/index.html#pricing" class="px-8 py-4 text-base font-medium rounded-full text-slate-300 border border-slate-700 hover:border-slate-500 hover:text-white transition-all">View Pricing</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT IS IT -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-6">What Is Bulk Contact Form Submission?</h2>
+            <p class="text-slate-400 text-lg mb-6 leading-relaxed">
+                Bulk contact form submission is the automated process of submitting a message to the contact forms of many websites simultaneously, rather than visiting each site manually. It's the foundation of contact form marketing at scale — turning what would take weeks of manual effort into a campaign that completes in hours.
+            </p>
+            <p class="text-slate-400 text-lg mb-6 leading-relaxed">
+                Unlike email blasting — which requires purchased contact lists and fights spam filters — bulk form submission works with the contact infrastructure every business already has. There's no email list to buy and no inbox to compete with. You simply provide a list of target website URLs, and the platform does the rest.
+            </p>
+            <p class="text-slate-400 text-lg leading-relaxed">
+                Contact Form Blaster handles the full technical pipeline: crawling each URL, locating the contact form, parsing every field, filling in your sender details and message, bypassing CAPTCHA challenges, and submitting — then reporting back on each result in real time.
+            </p>
+        </div>
+    </section>
+
+    <!-- PIPELINE -->
+    <section class="py-20 px-4 bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-4 text-center">The Submission Pipeline</h2>
+            <p class="text-slate-400 text-center mb-12 max-w-2xl mx-auto">Every URL in your campaign goes through the same fully automated sequence.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass rounded-2xl p-6">
+                    <div class="w-10 h-10 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary font-bold mb-4">1</div>
+                    <h3 class="text-white font-semibold mb-2">URL Validation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Each URL is validated and deduplicated before processing begins. Malformed or unreachable URLs are flagged immediately without consuming credits.</p>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <div class="w-10 h-10 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary font-bold mb-4">2</div>
+                    <h3 class="text-white font-semibold mb-2">Form Discovery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">The page is crawled using browser automation. AI locates the contact form — whether on the page itself or linked from a nav menu or footer.</p>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <div class="w-10 h-10 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary font-bold mb-4">3</div>
+                    <h3 class="text-white font-semibold mb-2">Field Mapping</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">All form fields are identified and semantically mapped — name, email, phone, subject, message, dropdowns, checkboxes, and custom fields.</p>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <div class="w-10 h-10 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary font-bold mb-4">4</div>
+                    <h3 class="text-white font-semibold mb-2">AI Message Generation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">If AI mode is enabled, a unique message is generated for this specific domain — personalized based on the target site's context and your campaign instructions.</p>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <div class="w-10 h-10 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary font-bold mb-4">5</div>
+                    <h3 class="text-white font-semibold mb-2">CAPTCHA Resolution</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">reCAPTCHA and hCaptcha challenges are detected and solved automatically via integrated third-party solving services before submission proceeds.</p>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <div class="w-10 h-10 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary font-bold mb-4">6</div>
+                    <h3 class="text-white font-semibold mb-2">Submission &amp; Reporting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">The form is submitted and the result is logged in real time — success, failure reason, CAPTCHA status, and AI quality score — so you can monitor campaigns live.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="py-20 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Built for High-Volume Campaigns</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="glass rounded-2xl p-6 flex gap-4">
+                    <div class="text-primary text-2xl flex-shrink-0"><i class="fa-solid fa-file-csv"></i></div>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Spreadsheet Upload</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">CSV, XLS, and XLSX files up to 10 MB. AI auto-detects the URL column — no reformatting needed. Duplicates are removed automatically.</p>
+                    </div>
+                </div>
+                <div class="glass rounded-2xl p-6 flex gap-4">
+                    <div class="text-primary text-2xl flex-shrink-0"><i class="fa-solid fa-pause"></i></div>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Pause &amp; Resume</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Stop any live campaign instantly and resume exactly where it left off. Never lose progress on large campaigns.</p>
+                    </div>
+                </div>
+                <div class="glass rounded-2xl p-6 flex gap-4">
+                    <div class="text-primary text-2xl flex-shrink-0"><i class="fa-solid fa-bolt"></i></div>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Preset Configurations</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Save full campaign configurations — sender details, subject, message template, AI instructions — and reuse them with one click.</p>
+                    </div>
+                </div>
+                <div class="glass rounded-2xl p-6 flex gap-4">
+                    <div class="text-primary text-2xl flex-shrink-0"><i class="fa-solid fa-coins"></i></div>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Pay Per Submission</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Credits are only charged on successful submissions. Failed submissions cost 50% of credits. System failures are refunded 100%.</p>
+                    </div>
+                </div>
+                <div class="glass rounded-2xl p-6 flex gap-4">
+                    <div class="text-primary text-2xl flex-shrink-0"><i class="fa-solid fa-chart-line"></i></div>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Real-Time Dashboard</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Monitor submissions as they happen. See success rates, CAPTCHA encounters, AI quality scores, and failure reasons per URL.</p>
+                    </div>
+                </div>
+                <div class="glass rounded-2xl p-6 flex gap-4">
+                    <div class="text-primary text-2xl flex-shrink-0"><i class="fa-solid fa-infinity"></i></div>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">No Expiry on Credits</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Credits never expire. Buy a large pack and run campaigns at your own pace — no subscription, no monthly minimums.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 px-4 bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-3">
+                <div class="faq-item glass rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this.parentElement)" class="w-full flex justify-between items-center p-6 text-left gap-4">
+                        <span class="text-white font-medium">How many URLs can I upload per campaign?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer text-slate-400 text-sm leading-relaxed">There's no hard cap on campaign size. Spreadsheet files up to 10 MB are accepted (CSV, XLS, XLSX), which can contain tens of thousands of URLs. Submissions run in parallel so large campaigns complete efficiently without requiring you to split the file.</div>
+                </div>
+                <div class="faq-item glass rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this.parentElement)" class="w-full flex justify-between items-center p-6 text-left gap-4">
+                        <span class="text-white font-medium">What if a form has unusual fields I haven't configured?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer text-slate-400 text-sm leading-relaxed">The AI field mapper uses semantic understanding to infer the purpose of custom fields and fills them appropriately from your configured sender profile. Required fields that can't be reasonably filled are left blank, and the submission result notes any issues encountered.</div>
+                </div>
+                <div class="faq-item glass rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this.parentElement)" class="w-full flex justify-between items-center p-6 text-left gap-4">
+                        <span class="text-white font-medium">Am I charged for sites where no contact form was found?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer text-slate-400 text-sm leading-relaxed">No. If the platform cannot locate a contact form on the target URL, no credits are charged. You only pay when a submission is actually attempted. The dashboard shows a clear breakdown of successful, failed, and skipped URLs for each campaign.</div>
+                </div>
+                <div class="faq-item glass rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this.parentElement)" class="w-full flex justify-between items-center p-6 text-left gap-4">
+                        <span class="text-white font-medium">Can I run multiple campaigns simultaneously?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer text-slate-400 text-sm leading-relaxed">Yes. Multiple campaigns can run concurrently, each with its own URL list, message template, and configuration. This is particularly useful for agencies managing outreach for multiple clients or running separate campaigns for different verticals at the same time.</div>
+                </div>
+                <div class="faq-item glass rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this.parentElement)" class="w-full flex justify-between items-center p-6 text-left gap-4">
+                        <span class="text-white font-medium">What is the difference between standard and AI submission?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer text-slate-400 text-sm leading-relaxed">Standard submission uses your message template verbatim across all targets. AI submission generates a unique message for each target domain, factoring in the website's context and your campaign instructions. AI mode costs 1 additional credit per site and includes a 0–100 spam/quality score per generated message.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 px-4 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Launch Your First Bulk Campaign</h2>
+            <p class="text-slate-400 text-lg mb-10">Sign up free and get 25 credits. No monthly subscription. No expiry.</p>
+            <a href="https://app.contactformblaster.com/register" class="btn-glow inline-block px-10 py-4 text-base font-semibold rounded-full text-white bg-primary hover:bg-primaryDark shadow-lg transition-all hover:scale-105">Get Started Free</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900/60 pt-16 pb-8 border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <a href="/index.html" class="flex items-center gap-3 mb-5 group">
+                        <img class="h-9 w-9 rounded-full object-contain bg-white p-1 group-hover:scale-110 transition-transform" src="/assets/logo/logo.png" alt="Contact Form Blaster Logo" onerror="this.src='/assets/logo/logo.svg'">
+                        <span class="font-bold text-lg text-white">Contact Form Blaster</span>
+                    </a>
+                    <p class="text-slate-500 text-sm leading-relaxed">Automated bulk contact form submission &amp; outreach software for B2B scale.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-5 text-sm uppercase tracking-wider">Resources</h4>
+                    <ul class="space-y-3 text-sm text-slate-500">
+                        <li><a href="/contact-form-marketing.html" class="hover:text-primary transition-colors">Contact Form Marketing</a></li>
+                        <li><a href="/bulk-contact-form-submission.html" class="hover:text-primary transition-colors">Bulk Form Submission</a></li>
+                        <li><a href="/automated-contact-form-filler.html" class="hover:text-primary transition-colors">Automated Form Filler</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-5 text-sm uppercase tracking-wider">Legal</h4>
+                    <ul class="space-y-3 text-sm text-slate-500">
+                        <li><a href="/terms.html" class="hover:text-primary transition-colors">Terms and Conditions</a></li>
+                        <li><a href="/privacy.html" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-5 text-sm uppercase tracking-wider">Support</h4>
+                    <ul class="space-y-3 text-sm text-slate-500">
+                        <li><a href="/contact.html" class="hover:text-primary transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800/60 pt-8">
+                <p class="text-slate-600 text-sm">&copy; 2026 Contact Form Blaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="google_translate_element" style="display:none"></div>
+    <style>.goog-te-banner-frame,.skiptranslate{display:none!important;}body{top:0!important;}</style>
+    <script>
+    function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'en',autoDisplay:false},'google_translate_element');}
+    function toggleFaq(el){const wasOpen=el.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!wasOpen)el.classList.add('open');}
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+    <script src="/assets/js/lang-switcher.js"></script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Marketing – B2B Outreach via Website Forms | Contact Form Blaster</title>
+    <meta name="description" content="Contact form marketing lets you reach businesses directly through their website contact forms — bypassing email filters. Learn how to run B2B outreach at scale with Contact Form Blaster.">
+    <link rel="canonical" href="https://www.contactformblaster.com/contact-form-marketing">
+    <link rel="alternate" hreflang="en" href="https://www.contactformblaster.com/contact-form-marketing.html">
+    <link rel="alternate" hreflang="fr" href="https://www.contactformblaster.com/fr/marketing-formulaire-contact.html">
+    <link rel="alternate" hreflang="es" href="https://www.contactformblaster.com/es/marketing-formulario-contacto.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.contactformblaster.com/contact-form-marketing.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Form Marketing – Reach Any Business Directly">
+    <meta property="og:description" content="Deliver your B2B message through website contact forms, not email. Bypass spam filters and reach decision-makers where they actually read messages.">
+    <meta property="og:url" content="https://www.contactformblaster.com/contact-form-marketing.html">
+    <meta property="og:site_name" content="Contact Form Blaster">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: { sans: ['Inter', 'sans-serif'] },
+                colors: {
+                    primary: '#6366f1',
+                    primaryDark: '#4f46e5',
+                    dark: '#0a0f1a',
+                }
+            }
+        }
+    }
+    </script>
+    <style>
+        body { background:#0a0f1a; }
+        .btn-glow:hover { box-shadow:0 0 25px rgba(99,102,241,.5); }
+        .glass { background:rgba(255,255,255,.05); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.08); }
+        .faq-answer { max-height:0; overflow:hidden; transition:max-height .45s cubic-bezier(.25,.46,.45,.94), padding .35s ease; padding:0 1.5rem; }
+        .faq-item.open .faq-answer { max-height:600px; padding:0 1.5rem 1.5rem; }
+        .faq-item.open .faq-chevron { transform:rotate(180deg); }
+        .faq-chevron { transition:transform .35s ease; }
+    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MEASUREMENT_ID');
+    </script>
+</head>
+<body class="font-sans text-slate-100 antialiased overflow-x-hidden">
+
+    <!-- NAV -->
+    <nav id="mainNav" class="fixed w-full z-50 bg-slate-900/80 backdrop-blur-xl border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="/index.html" class="flex items-center gap-3 group">
+                    <img class="h-10 w-10 rounded-full object-contain bg-white p-1 transition-transform group-hover:scale-110" src="/assets/logo/logo.png" alt="Contact Form Blaster" onerror="this.src='/assets/logo/logo.svg'">
+                    <span class="font-bold text-xl tracking-tight text-white">Contact Form Blaster</span>
+                </a>
+                <div class="hidden lg:flex items-center gap-4">
+                    <!-- Language Switcher -->
+                    <div class="relative">
+                        <button id="langDropBtn" class="flex items-center gap-1.5 text-sm font-medium text-slate-300 hover:text-white transition-colors px-3 py-1.5 rounded-lg hover:bg-white/5 border border-slate-700/50 hover:border-slate-600">
+                            <span id="langCurrentFlag">🇺🇸</span>
+                            <span id="langCurrentLabel" class="text-xs">EN</span>
+                            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                        </button>
+                        <div id="langDropMenu" class="hidden absolute right-0 top-full mt-2 bg-slate-900/95 backdrop-blur-xl border border-slate-700/60 rounded-xl p-1.5 min-w-[140px] shadow-xl z-50">
+                            <button onclick="switchLang('en')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇺🇸 English</button>
+                            <button onclick="switchLang('fr')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇫🇷 Français</button>
+                            <button onclick="switchLang('es')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇪🇸 Español</button>
+                        </div>
+                    </div>
+                    <a href="https://app.contactformblaster.com/" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Login</a>
+                    <a href="https://app.contactformblaster.com/register" class="btn-glow px-6 py-2.5 text-sm font-semibold rounded-full text-white bg-primary hover:bg-primaryDark shadow-lg transition-all hover:scale-105">Try Free</a>
+                </div>
+                <a href="https://app.contactformblaster.com/register" class="lg:hidden btn-glow px-4 py-2 text-sm font-semibold rounded-full text-white bg-primary">Try Free</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="pt-36 pb-20 px-4 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full glass text-primary text-sm font-semibold mb-8">
+                <i class="fa-solid fa-bullhorn"></i> B2B Outreach Strategy
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
+                Contact Form Marketing:<br>
+                <span class="text-primary">Reach Any Business Directly</span>
+            </h1>
+            <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
+                Deliver your message through a company's own website — not their overloaded inbox. Contact form marketing bypasses spam filters entirely and lands in the hands of decision-makers.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://app.contactformblaster.com/register" class="btn-glow px-8 py-4 text-base font-semibold rounded-full text-white bg-primary hover:bg-primaryDark shadow-lg transition-all hover:scale-105">Start Free — No Credit Card</a>
+                <a href="/index.html#how-it-works" class="px-8 py-4 text-base font-medium rounded-full text-slate-300 border border-slate-700 hover:border-slate-500 hover:text-white transition-all">See How It Works</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT IS IT -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-6">What Is Contact Form Marketing?</h2>
+            <p class="text-slate-400 text-lg mb-6 leading-relaxed">
+                Contact form marketing is a B2B outreach strategy where you submit your sales or partnership message directly through the contact forms on target companies' websites. Instead of sending cold emails that get caught by spam filters or ignored in crowded inboxes, your message is delivered through the business's own communication channel — the form they set up specifically to receive inquiries.
+            </p>
+            <p class="text-slate-400 text-lg mb-6 leading-relaxed">
+                Every business with a website has a contact form. That form feeds directly into the owner's inbox — often a personal or business email they check daily. Your outreach arrives not as unsolicited email, but as a genuine website inquiry, which fundamentally changes how it's perceived and handled.
+            </p>
+            <p class="text-slate-400 text-lg leading-relaxed">
+                Contact Form Blaster automates this process across thousands of websites simultaneously, turning what would be days of manual outreach into a campaign that runs in hours.
+            </p>
+        </div>
+    </section>
+
+    <!-- WHY IT WORKS -->
+    <section class="py-20 px-4 bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-4 text-center">Why Contact Form Marketing Works</h2>
+            <p class="text-slate-400 text-center mb-12 max-w-2xl mx-auto">Traditional cold email is broken. Contact form marketing solves the core problems.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass rounded-2xl p-6">
+                    <div class="text-3xl mb-4">🚫</div>
+                    <h3 class="text-white font-semibold text-lg mb-2">No Spam Filters</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Your message is submitted via the website's own form — it never touches an email server you don't control. Spam filters on the recipient's side have no way to intercept it before delivery.</p>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <div class="text-3xl mb-4">📬</div>
+                    <h3 class="text-white font-semibold text-lg mb-2">Lands in the Right Inbox</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Contact form submissions go to the email address configured by the business owner — often the founder or decision-maker themselves, not a generic info@ address buried under thousands of newsletters.</p>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <div class="text-3xl mb-4">👀</div>
+                    <h3 class="text-white font-semibold text-lg mb-2">Higher Open Rates</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">A contact form notification email is treated as a business inquiry, not a marketing email. Recipients open these because they expect real leads — your message benefits from that expectation.</p>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <div class="text-3xl mb-4">🎯</div>
+                    <h3 class="text-white font-semibold text-lg mb-2">Precise Targeting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Upload any list of URLs — scraped from directories, LinkedIn, or niche databases. Target companies by industry, geography, or size. Your campaign reaches exactly the businesses you choose.</p>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <div class="text-3xl mb-4">⚡</div>
+                    <h3 class="text-white font-semibold text-lg mb-2">Unlimited Scale</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Manually filling contact forms is impractical beyond a few dozen sites. Contact Form Blaster submits to thousands of forms simultaneously, making large-scale outreach economically viable.</p>
+                </div>
+                <div class="glass rounded-2xl p-6">
+                    <div class="text-3xl mb-4">💬</div>
+                    <h3 class="text-white font-semibold text-lg mb-2">AI Personalization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Our AI generates a unique message for each website, factoring in the domain and industry. Personalized outreach at scale — without writing thousands of individual messages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">How Contact Form Marketing Works</h2>
+            <div class="space-y-8">
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary font-bold">1</div>
+                    <div>
+                        <h3 class="text-white font-semibold text-lg mb-2">Build Your Target List</h3>
+                        <p class="text-slate-400 leading-relaxed">Compile a list of website URLs for the businesses you want to reach. This can come from Google searches, LinkedIn, industry directories, or lead databases. Upload as CSV, XLS, or XLSX — Contact Form Blaster auto-detects the URL column.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary font-bold">2</div>
+                    <div>
+                        <h3 class="text-white font-semibold text-lg mb-2">Craft Your Message</h3>
+                        <p class="text-slate-400 leading-relaxed">Write a message template with your offer, value proposition, or partnership inquiry. Keep it concise and benefit-focused. Enable AI mode and our system generates a unique, personalized version for each target website.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary font-bold">3</div>
+                    <div>
+                        <h3 class="text-white font-semibold text-lg mb-2">Launch the Campaign</h3>
+                        <p class="text-slate-400 leading-relaxed">Contact Form Blaster crawls each target website, locates the contact form, intelligently fills in all fields including name, email, and message, then submits. CAPTCHA challenges are handled automatically.</p>
+                    </div>
+                </div>
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center text-primary font-bold">4</div>
+                    <div>
+                        <h3 class="text-white font-semibold text-lg mb-2">Manage Responses</h3>
+                        <p class="text-slate-400 leading-relaxed">Replies come straight to your inbox — the email address you configured as the sender. Follow up with interested leads, refine your message based on response patterns, and scale what works.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHO USES IT -->
+    <section class="py-20 px-4 bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-4 text-center">Who Uses Contact Form Marketing</h2>
+            <p class="text-slate-400 text-center mb-12 max-w-xl mx-auto">Any business that needs to reach other businesses at scale.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass rounded-2xl p-6 text-center">
+                    <div class="text-3xl mb-3">🏢</div>
+                    <h3 class="text-white font-semibold mb-2">Digital Agencies</h3>
+                    <p class="text-slate-400 text-sm">Prospecting for new clients across specific niches — web design agencies targeting local restaurants, marketing agencies targeting e-commerce stores, and so on.</p>
+                </div>
+                <div class="glass rounded-2xl p-6 text-center">
+                    <div class="text-3xl mb-3">🔍</div>
+                    <h3 class="text-white font-semibold mb-2">SEO &amp; SEM Consultants</h3>
+                    <p class="text-slate-400 text-sm">Reaching businesses whose sites need SEO work — identified by poor rankings or missing technical optimizations — with a targeted pitch.</p>
+                </div>
+                <div class="glass rounded-2xl p-6 text-center">
+                    <div class="text-3xl mb-3">💼</div>
+                    <h3 class="text-white font-semibold mb-2">B2B SaaS Companies</h3>
+                    <p class="text-slate-400 text-sm">Announcing a new tool or integration to a specific category of businesses before investing in paid acquisition channels.</p>
+                </div>
+                <div class="glass rounded-2xl p-6 text-center">
+                    <div class="text-3xl mb-3">🤝</div>
+                    <h3 class="text-white font-semibold mb-2">Partnership Seekers</h3>
+                    <p class="text-slate-400 text-sm">Finding affiliate, reseller, or referral partners in complementary industries without the friction of finding the right contact person's email.</p>
+                </div>
+                <div class="glass rounded-2xl p-6 text-center">
+                    <div class="text-3xl mb-3">📦</div>
+                    <h3 class="text-white font-semibold mb-2">Suppliers &amp; Wholesalers</h3>
+                    <p class="text-slate-400 text-sm">Reaching retailers or distributors in target markets to present product lines and pricing, without purchasing expensive industry contact lists.</p>
+                </div>
+                <div class="glass rounded-2xl p-6 text-center">
+                    <div class="text-3xl mb-3">🖊️</div>
+                    <h3 class="text-white font-semibold mb-2">Freelancers</h3>
+                    <p class="text-slate-400 text-sm">Copywriters, developers, and designers prospecting for clients by reaching businesses in their target vertical directly through their website forms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-3">
+                <div class="faq-item glass rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this.parentElement)" class="w-full flex justify-between items-center p-6 text-left gap-4">
+                        <span class="text-white font-medium">Is contact form marketing the same as cold email?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer text-slate-400 text-sm leading-relaxed">No. Cold email is sent directly to someone's email address, where it competes with thousands of other emails and must pass through spam filters. Contact form marketing submits your message through a website's contact form — it arrives as a website inquiry notification, not a cold email, and bypasses email spam filters entirely.</div>
+                </div>
+                <div class="faq-item glass rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this.parentElement)" class="w-full flex justify-between items-center p-6 text-left gap-4">
+                        <span class="text-white font-medium">What response rates can I expect?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer text-slate-400 text-sm leading-relaxed">Response rates vary by industry, message quality, and offer relevance — just like any outreach channel. Contact form marketing typically outperforms cold email on open rates because form submissions are treated as business inquiries. Users report 1–5% response rates on broad campaigns and significantly higher on tightly targeted, personalized campaigns.</div>
+                </div>
+                <div class="faq-item glass rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this.parentElement)" class="w-full flex justify-between items-center p-6 text-left gap-4">
+                        <span class="text-white font-medium">What types of websites does this work on?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer text-slate-400 text-sm leading-relaxed">Any website with a contact form. This includes WordPress sites, Squarespace, Wix, Webflow, Shopify, custom-built sites, and more. Contact Form Blaster uses AI to locate and fill forms regardless of how they're built, handling standard fields, custom fields, dropdowns, and CAPTCHA challenges automatically.</div>
+                </div>
+                <div class="faq-item glass rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this.parentElement)" class="w-full flex justify-between items-center p-6 text-left gap-4">
+                        <span class="text-white font-medium">How many sites can I reach per campaign?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer text-slate-400 text-sm leading-relaxed">There is no hard cap on campaign size. Campaigns run asynchronously — you upload your URL list, configure your message, and the platform processes submissions in parallel. Campaigns with tens of thousands of URLs are fully supported. You only pay per successful submission.</div>
+                </div>
+                <div class="faq-item glass rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(this.parentElement)" class="w-full flex justify-between items-center p-6 text-left gap-4">
+                        <span class="text-white font-medium">Is contact form marketing legal?</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-slate-400 flex-shrink-0"></i>
+                    </button>
+                    <div class="faq-answer text-slate-400 text-sm leading-relaxed">Contact Form Blaster is intended for legitimate business outreach. Laws vary by jurisdiction — users are responsible for compliance with applicable regulations in their country. The platform is designed for B2B outreach where you have a genuine business offer or inquiry relevant to the recipient. Spamming, deceptive messaging, or targeting consumers without consent may violate local laws.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 px-4 text-center bg-slate-900/40 border-t border-slate-800/60">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Ready to Run Your First Campaign?</h2>
+            <p class="text-slate-400 text-lg mb-10">Sign up free and get 25 credits instantly. No credit card required.</p>
+            <a href="https://app.contactformblaster.com/register" class="btn-glow inline-block px-10 py-4 text-base font-semibold rounded-full text-white bg-primary hover:bg-primaryDark shadow-lg transition-all hover:scale-105">Get Started Free</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900/60 pt-16 pb-8 border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="lg:col-span-1">
+                    <a href="/index.html" class="flex items-center gap-3 mb-5 group">
+                        <img class="h-9 w-9 rounded-full object-contain bg-white p-1 group-hover:scale-110 transition-transform" src="/assets/logo/logo.png" alt="Contact Form Blaster Logo" onerror="this.src='/assets/logo/logo.svg'">
+                        <span class="font-bold text-lg text-white">Contact Form Blaster</span>
+                    </a>
+                    <p class="text-slate-500 text-sm leading-relaxed">Automated bulk contact form submission &amp; outreach software for B2B scale.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-5 text-sm uppercase tracking-wider">Resources</h4>
+                    <ul class="space-y-3 text-sm text-slate-500">
+                        <li><a href="/contact-form-marketing.html" class="hover:text-primary transition-colors">Contact Form Marketing</a></li>
+                        <li><a href="/bulk-contact-form-submission.html" class="hover:text-primary transition-colors">Bulk Form Submission</a></li>
+                        <li><a href="/automated-contact-form-filler.html" class="hover:text-primary transition-colors">Automated Form Filler</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-5 text-sm uppercase tracking-wider">Legal</h4>
+                    <ul class="space-y-3 text-sm text-slate-500">
+                        <li><a href="/terms.html" class="hover:text-primary transition-colors">Terms and Conditions</a></li>
+                        <li><a href="/privacy.html" class="hover:text-primary transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-5 text-sm uppercase tracking-wider">Support</h4>
+                    <ul class="space-y-3 text-sm text-slate-500">
+                        <li><a href="/contact.html" class="hover:text-primary transition-colors">Contact Us</a></li>
+                        <li><a href="/index.html#pricing" class="hover:text-primary transition-colors">Pricing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800/60 pt-8">
+                <p class="text-slate-600 text-sm">&copy; 2026 Contact Form Blaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Google Translate Widget -->
+    <div id="google_translate_element" style="display:none"></div>
+    <style>
+        .goog-te-banner-frame, .skiptranslate { display:none !important; }
+        body { top:0 !important; }
+    </style>
+    <script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', autoDisplay: false }, 'google_translate_element');
+    }
+    function toggleFaq(el) {
+        const wasOpen = el.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) el.classList.add('open');
+    }
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
+    <script src="/assets/js/lang-switcher.js"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Is contact form marketing the same as cold email?","acceptedAnswer":{"@type":"Answer","text":"No. Contact form marketing submits your message through a website's contact form — it arrives as a website inquiry notification, not a cold email, bypassing email spam filters entirely."}},
+        {"@type":"Question","name":"What response rates can I expect?","acceptedAnswer":{"@type":"Answer","text":"Users report 1–5% response rates on broad campaigns and significantly higher on tightly targeted, personalized campaigns."}},
+        {"@type":"Question","name":"Is contact form marketing legal?","acceptedAnswer":{"@type":"Answer","text":"Contact Form Blaster is intended for legitimate business outreach. Users are responsible for compliance with applicable regulations in their country."}}
+      ]
+    }
+    </script>
+</body>
+</html>
