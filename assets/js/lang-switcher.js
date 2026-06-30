@@ -46,9 +46,36 @@
   };
 
   const LANG_META = {
-    en: { flag: '🇺🇸', label: 'EN', name: 'English' },
-    fr: { flag: '🇫🇷', label: 'FR', name: 'Français' },
-    es: { flag: '🇪🇸', label: 'ES', name: 'Español' }
+    en:  { flag: '🇺🇸', label: 'EN',  name: 'English' },
+    zh:  { flag: '🇨🇳', label: 'ZH',  name: '中文' },
+    hi:  { flag: '🇮🇳', label: 'HI',  name: 'हिन्दी' },
+    es:  { flag: '🇪🇸', label: 'ES',  name: 'Español' },
+    fr:  { flag: '🇫🇷', label: 'FR',  name: 'Français' },
+    ar:  { flag: '🇸🇦', label: 'AR',  name: 'العربية' },
+    bn:  { flag: '🇧🇩', label: 'BN',  name: 'বাংলা' },
+    pt:  { flag: '🇧🇷', label: 'PT',  name: 'Português' },
+    ru:  { flag: '🇷🇺', label: 'RU',  name: 'Русский' },
+    ur:  { flag: '🇵🇰', label: 'UR',  name: 'اردو' },
+    id:  { flag: '🇮🇩', label: 'ID',  name: 'Indonesia' },
+    de:  { flag: '🇩🇪', label: 'DE',  name: 'Deutsch' },
+    ja:  { flag: '🇯🇵', label: 'JA',  name: '日本語' },
+    tr:  { flag: '🇹🇷', label: 'TR',  name: 'Türkçe' },
+    vi:  { flag: '🇻🇳', label: 'VI',  name: 'Tiếng Việt' },
+    ko:  { flag: '🇰🇷', label: 'KO',  name: '한국어' },
+    it:  { flag: '🇮🇹', label: 'IT',  name: 'Italiano' },
+    th:  { flag: '🇹🇭', label: 'TH',  name: 'ภาษาไทย' },
+    fa:  { flag: '🇮🇷', label: 'FA',  name: 'فارسی' },
+    pl:  { flag: '🇵🇱', label: 'PL',  name: 'Polski' },
+    uk:  { flag: '🇺🇦', label: 'UK',  name: 'Українська' },
+    nl:  { flag: '🇳🇱', label: 'NL',  name: 'Nederlands' },
+    ro:  { flag: '🇷🇴', label: 'RO',  name: 'Română' },
+    el:  { flag: '🇬🇷', label: 'EL',  name: 'Ελληνικά' },
+    cs:  { flag: '🇨🇿', label: 'CS',  name: 'Čeština' },
+    sv:  { flag: '🇸🇪', label: 'SV',  name: 'Svenska' },
+    hu:  { flag: '🇭🇺', label: 'HU',  name: 'Magyar' },
+    ms:  { flag: '🇲🇾', label: 'MS',  name: 'Melayu' },
+    he:  { flag: '🇮🇱', label: 'HE',  name: 'עברית' },
+    sw:  { flag: '🇰🇪', label: 'SW',  name: 'Kiswahili' }
   };
 
   function currentFilename() {
