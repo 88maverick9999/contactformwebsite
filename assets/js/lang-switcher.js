@@ -156,13 +156,9 @@
       });
     }
 
-    // Mobile lang buttons
-    var mobileEn = document.getElementById('mobileLangEn');
-    var mobileFr = document.getElementById('mobileLangFr');
-    var mobileEs = document.getElementById('mobileLangEs');
-    if (mobileEn) mobileEn.addEventListener('click', function () { window.switchLang('en'); });
-    if (mobileFr) mobileFr.addEventListener('click', function () { window.switchLang('fr'); });
-    if (mobileEs) mobileEs.addEventListener('click', function () { window.switchLang('es'); });
+    // Mobile language select
+    var mobileSel = document.getElementById('mobileLangSelect');
+    if (mobileSel) mobileSel.value = lang;
   }
 
   document.addEventListener('DOMContentLoaded', function () {
