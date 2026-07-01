@@ -283,13 +283,7 @@
     document.cookie = 'googtrans=' + val + '; path=/';
   }
 
-  window.switchLang = function (lang) {
-    var file = currentFilename();
-    var map = PAGE_MAP[file];
-    if (map && map[lang]) {
-      window.location.href = map[lang];
-      return;
-    }
+  function applyLang(lang) {
     if (lang === 'en') {
       document.cookie = 'googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC';
       document.cookie = 'googtrans=; path=/; domain=' + window.location.hostname + '; expires=Thu, 01 Jan 1970 00:00:00 UTC';
@@ -297,24 +291,37 @@
       setGoogTransCookie(lang);
     }
     window.location.reload();
+  }
+
+  window.switchLang = function (lang) {
+    // Manual selection — remember it for the session, overriding browser detection
+    sessionStorage.setItem('sessionLang', lang);
+    sessionStorage.setItem('langManual', '1');
+    var file = currentFilename();
+    var map = PAGE_MAP[file];
+    if (map && map[lang]) {
+      window.location.href = map[lang];
+      return;
+    }
+    applyLang(lang);
   };
 
   function autoDetect() {
-    if (sessionStorage.getItem('langDetected')) return;
-    sessionStorage.setItem('langDetected', '1');
-    var nav = navigator.language || navigator.userLanguage || 'en';
-    var primary = nav.split('-')[0].toLowerCase();
-    var cur = currentLang();
-    if (primary === cur) return;
-    if (!LANG_META[primary]) return;
-    // Translate the current page in place — never redirect to SEO landing pages
-    if (primary === 'en') {
-      document.cookie = 'googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC';
-      document.cookie = 'googtrans=; path=/; domain=' + window.location.hostname + '; expires=Thu, 01 Jan 1970 00:00:00 UTC';
-    } else {
-      setGoogTransCookie(primary);
+    // Determine target language: manual choice wins, else browser language
+    var target = sessionStorage.getItem('sessionLang');
+    if (!target) {
+      var nav = navigator.language || navigator.userLanguage || 'en';
+      target = nav.split('-')[0].toLowerCase();
+      if (!LANG_META[target]) target = 'en';
+      sessionStorage.setItem('sessionLang', target);
     }
-    window.location.reload();
+    // Already on a translated subpage — don't interfere
+    var cur = currentLang();
+    if (target === cur) return;
+    // Only translate in place on main site pages (not SEO subfolders)
+    var path = window.location.pathname;
+    if (path.match(/^\/[a-z]{2,3}\//)) return;
+    applyLang(target);
   }
 
   function initUI() {
