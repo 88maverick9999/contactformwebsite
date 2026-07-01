@@ -187,7 +187,20 @@
     hu: ['kapcsolatfelvetel-urlap-marketing.html', 'tomeg-bekuldese-kontakt-urlap.html', 'automatikus-kitoltes-kontakt-urlap.html'],
     ms: ['pemasaran-borang-hubungi.html', 'hantar-pukal-borang-hubungi.html', 'pengisi-automatik-borang-hubungi.html'],
     he: ['shiur-tipul-shinuim-shivuk.html', 'shlihat-kama-shinuim-tipul.html', 'miluy-otomati-shinuim-tipul.html'],
-    sw: ['masoko-fomu-mawasiliano.html', 'utumaji-wingi-fomu-mawasiliano.html', 'kujaza-kiotomatiki-fomu-mawasiliano.html']
+    sw: ['masoko-fomu-mawasiliano.html', 'utumaji-wingi-fomu-mawasiliano.html', 'kujaza-kiotomatiki-fomu-mawasiliano.html'],
+    mr:  ['sampark-form-marketing.html', 'bulk-sampark-form-submission.html', 'swayam-sampark-form-bharai.html'],
+    te:  ['sampark-form-marketing.html', 'bulk-sampark-form-submission.html', 'automatic-sampark-form-fill.html'],
+    ta:  ['contact-form-marketing.html', 'bulk-contact-form-submission.html', 'automatic-contact-form-fill.html'],
+    ha:  ['tallace-fom-sadarwa.html', 'aika-fom-sadarwa-yawa.html', 'cike-fom-sadarwa-atomatik.html'],
+    yue: ['lianxi-biaoge-yingxiao.html', 'piliang-lianxi-biaoge-tijiao.html', 'zidong-tian-lianxi-biaoge.html'],
+    gu:  ['sampark-form-marketing.html', 'bulk-sampark-form-submission.html', 'svachalit-sampark-form-bharai.html'],
+    pa:  ['sampark-form-marketing.html', 'bulk-sampark-form-submission.html', 'automatic-sampark-form-fill.html'],
+    am:  ['masawaqiya-fom-timokir.html', 'bulk-fom-mestemar.html', 'automatic-fom-mela.html'],
+    yo:  ['ipolowo-fomuu-olubasoro.html', 'fifiranso-opo-fomuu.html', 'kikun-aifowole-fomuu.html'],
+    my:  ['contact-form-marketing.html', 'bulk-contact-form-submission.html', 'automatic-contact-form-fill.html'],
+    tl:  ['marketing-contact-form.html', 'bulk-contact-form.html', 'automatic-contact-form.html'],
+    mg:  ['contact-form-marketing.html', 'bulk-contact-form-submission.html', 'automatic-contact-form-fill.html'],
+    si:  ['contact-form-marketing.html', 'bulk-contact-form-submission.html', 'automatic-contact-form-fill.html']
   };
 
   const EN_PAGES = ['contact-form-marketing.html', 'bulk-contact-form-submission.html', 'automated-contact-form-filler.html'];
@@ -234,7 +247,20 @@
     hu:  { flag: '🇭🇺', label: 'HU',  name: 'Magyar' },
     ms:  { flag: '🇲🇾', label: 'MS',  name: 'Melayu' },
     he:  { flag: '🇮🇱', label: 'HE',  name: 'עברית' },
-    sw:  { flag: '🇰🇪', label: 'SW',  name: 'Kiswahili' }
+    sw:  { flag: '🇰🇪', label: 'SW',  name: 'Kiswahili' },
+    mr:  { flag: '🇮🇳', label: 'MR',  name: 'मराठी' },
+    te:  { flag: '🇮🇳', label: 'TE',  name: 'తెలుగు' },
+    ta:  { flag: '🇱🇰', label: 'TA',  name: 'தமிழ்' },
+    ha:  { flag: '🇳🇬', label: 'HA',  name: 'Hausa' },
+    yue: { flag: '🇭🇰', label: 'YUE', name: '粵語' },
+    gu:  { flag: '🇮🇳', label: 'GU',  name: 'ગુજરાતી' },
+    pa:  { flag: '🇮🇳', label: 'PA',  name: 'ਪੰਜਾਬੀ' },
+    am:  { flag: '🇪🇹', label: 'AM',  name: 'አማርኛ' },
+    yo:  { flag: '🇳🇬', label: 'YO',  name: 'Yorùbá' },
+    my:  { flag: '🇲🇲', label: 'MY',  name: 'မြန်မာ' },
+    tl:  { flag: '🇵🇭', label: 'TL',  name: 'Filipino' },
+    mg:  { flag: '🇲🇬', label: 'MG',  name: 'Malagasy' },
+    si:  { flag: '🇱🇰', label: 'SI',  name: 'සිංහල' }
   };
 
   function currentFilename() {
@@ -244,7 +270,7 @@
 
   function currentLang() {
     var path = window.location.pathname;
-    var m = path.match(/^\/([a-z]{2})\//);
+    var m = path.match(/^\/([a-z]{2,3})\//);
     if (m && LANG_META[m[1]]) return m[1];
     var cm = document.cookie.match(/googtrans=\/en\/(\w+)/);
     if (cm) return cm[1];
