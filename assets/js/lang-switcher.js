@@ -367,10 +367,15 @@
     loadSignupCredits();
   });
 
-  // When browser restores page from back-forward cache, re-apply translation
+  // When browser restores page from bfcache, force a fresh reload if a
+  // non-English language is active — bfcache snapshots the pre-translation
+  // DOM so Google Translate won't re-run on restore without a real load.
   window.addEventListener('pageshow', function (e) {
     if (e.persisted) {
-      autoDetect();
+      var target = sessionStorage.getItem('sessionLang') || 'en';
+      if (target !== 'en') {
+        window.location.reload();
+      }
     }
   });
 })();
