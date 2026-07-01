@@ -366,4 +366,11 @@
     autoDetect();
     loadSignupCredits();
   });
+
+  // When browser restores page from back-forward cache, re-apply translation
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) {
+      autoDetect();
+    }
+  });
 })();
