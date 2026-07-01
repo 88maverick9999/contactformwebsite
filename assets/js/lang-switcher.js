@@ -348,8 +348,22 @@
     if (mobileSel) mobileSel.value = lang;
   }
 
+  function loadSignupCredits() {
+    fetch('https://app.contactformblaster.com/api/signup-credits')
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        if (data.success && data.signupCredits) {
+          document.querySelectorAll('.signup-credits-text').forEach(function(el) {
+            el.textContent = data.signupCredits;
+          });
+        }
+      })
+      .catch(function() { /* keep default 25 */ });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     initUI();
     autoDetect();
+    loadSignupCredits();
   });
 })();
