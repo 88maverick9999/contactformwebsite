@@ -2,6 +2,29 @@
   'use strict';
 
   const PAGE_MAP = {
+    'index.html': {
+      fr: '/fr/marketing-formulaire-contact.html', es: '/es/marketing-formulario-contacto.html',
+      zh: '/zh/lianxi-biaoge-yingxiao.html', hi: '/hi/sampark-form-marketing.html',
+      ar: '/ar/tasweq-namodhaj-ittisal.html', bn: '/bn/contact-form-marketing-bn.html',
+      pt: '/pt/marketing-formulario-contato.html', ru: '/ru/marketing-kontaktnoy-formy.html',
+      ur: '/ur/rabta-form-marketing.html', id: '/id/marketing-formulir-kontak.html',
+      de: '/de/kontaktformular-marketing.html', ja: '/ja/renraku-form-marketing.html',
+      tr: '/tr/iletisim-formu-pazarlama.html', vi: '/vi/marketing-form-lien-he.html',
+      ko: '/ko/yeonrak-form-marketing.html', it: '/it/marketing-modulo-contatto.html',
+      th: '/th/marketing-baeb-fom-tit-to.html', fa: '/fa/bazaryabi-faram-tamase.html',
+      pl: '/pl/marketing-formularz-kontaktowy.html', uk: '/uk/marketing-kontaktnoi-formy.html',
+      nl: '/nl/marketing-contactformulier.html', ro: '/ro/marketing-formular-contact.html',
+      el: '/el/marketing-morfis-epikoinonias.html', cs: '/cs/marketing-kontaktni-formular.html',
+      sv: '/sv/kontaktformular-marknadsforing.html', hu: '/hu/kapcsolatfelvetel-urlap-marketing.html',
+      ms: '/ms/pemasaran-borang-hubungi.html', he: '/he/shiur-tipul-shinuim-shivuk.html',
+      sw: '/sw/masoko-fomu-mawasiliano.html', mr: '/mr/sampark-form-marketing.html',
+      te: '/te/sampark-form-marketing.html', ta: '/ta/contact-form-marketing.html',
+      ha: '/ha/tallace-fom-sadarwa.html', yue: '/yue/lianxi-biaoge-yingxiao.html',
+      gu: '/gu/sampark-form-marketing.html', pa: '/pa/sampark-form-marketing.html',
+      am: '/am/masawaqiya-fom-timokir.html', yo: '/yo/ipolowo-fomuu-olubasoro.html',
+      my: '/my/contact-form-marketing.html', tl: '/tl/marketing-contact-form.html',
+      mg: '/mg/contact-form-marketing.html', si: '/si/contact-form-marketing.html'
+    },
     'contact-form-marketing.html': {
       fr: '/fr/marketing-formulaire-contact.html', es: '/es/marketing-formulario-contacto.html',
       zh: '/zh/lianxi-biaoge-yingxiao.html', hi: '/hi/sampark-form-marketing.html',
