@@ -59,6 +59,58 @@
                 <img class="h-8 w-8 rounded-full object-contain bg-white p-1" src="assets/logo/logo.png" alt="Contact Form Blaster Logo" onerror="this.src='assets/logo/logo.svg'; this.onerror=null;">
                 <span class="font-bold text-lg tracking-tight text-slate-900">Contact Form Blaster</span>
             </a>
+            <div class="relative">
+                        <button id="langDropBtn" class="flex items-center gap-1.5 text-sm font-medium text-slate-300 hover:text-white transition-colors px-3 py-1.5 rounded-lg hover:bg-white/5 border border-slate-700/50 hover:border-slate-600">
+                            <span id="langCurrentFlag">🇺🇸</span>
+                            <span id="langCurrentLabel" class="text-xs">EN</span>
+                            <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                        </button>
+                        <div id="langDropMenu" class="hidden absolute right-0 top-full mt-2 bg-slate-900/95 backdrop-blur-xl border border-slate-700/60 rounded-xl p-1.5 min-w-[160px] shadow-xl z-50 max-h-80 overflow-y-auto">
+                            <button onclick="switchLang('en')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇺🇸 English</button>
+                            <button onclick="switchLang('zh')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇨🇳 中文</button>
+                            <button onclick="switchLang('hi')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇮🇳 हिन्दी</button>
+                            <button onclick="switchLang('es')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇪🇸 Español</button>
+                            <button onclick="switchLang('fr')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇫🇷 Français</button>
+                            <button onclick="switchLang('ar')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇸🇦 العربية</button>
+                            <button onclick="switchLang('bn')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇧🇩 বাংলা</button>
+                            <button onclick="switchLang('pt')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇧🇷 Português</button>
+                            <button onclick="switchLang('ru')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇷🇺 Русский</button>
+                            <button onclick="switchLang('ur')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇵🇰 اردو</button>
+                            <button onclick="switchLang('id')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇮🇩 Indonesia</button>
+                            <button onclick="switchLang('de')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇩🇪 Deutsch</button>
+                            <button onclick="switchLang('ja')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇯🇵 日本語</button>
+                            <button onclick="switchLang('tr')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇹🇷 Türkçe</button>
+                            <button onclick="switchLang('vi')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇻🇳 Tiếng Việt</button>
+                            <button onclick="switchLang('ko')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇰🇷 한국어</button>
+                            <button onclick="switchLang('it')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇮🇹 Italiano</button>
+                            <button onclick="switchLang('th')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇹🇭 ภาษาไทย</button>
+                            <button onclick="switchLang('fa')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇮🇷 فارسی</button>
+                            <button onclick="switchLang('pl')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇵🇱 Polski</button>
+                            <button onclick="switchLang('uk')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇺🇦 Українська</button>
+                            <button onclick="switchLang('nl')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇳🇱 Nederlands</button>
+                            <button onclick="switchLang('ro')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇷🇴 Română</button>
+                            <button onclick="switchLang('el')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇬🇷 Ελληνικά</button>
+                            <button onclick="switchLang('cs')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇨🇿 Čeština</button>
+                            <button onclick="switchLang('sv')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇸🇪 Svenska</button>
+                            <button onclick="switchLang('hu')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇭🇺 Magyar</button>
+                            <button onclick="switchLang('ms')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇲🇾 Melayu</button>
+                            <button onclick="switchLang('he')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇮🇱 עברית</button>
+                            <button onclick="switchLang('sw')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇰🇪 Kiswahili</button>
+                            <button onclick="switchLang('mr')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇮🇳 मराठी</button>
+                            <button onclick="switchLang('te')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇮🇳 తెలుగు</button>
+                            <button onclick="switchLang('ta')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇱🇰 தமிழ்</button>
+                            <button onclick="switchLang('ha')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇳🇬 Hausa</button>
+                            <button onclick="switchLang('yue')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇭🇰 粵語</button>
+                            <button onclick="switchLang('gu')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇮🇳 ગુજરાતી</button>
+                            <button onclick="switchLang('pa')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇮🇳 ਪੰਜਾਬੀ</button>
+                            <button onclick="switchLang('am')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇪🇹 አማርኛ</button>
+                            <button onclick="switchLang('yo')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇳🇬 Yorùbá</button>
+                            <button onclick="switchLang('my')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇲🇲 မြန်မာ</button>
+                            <button onclick="switchLang('tl')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇵🇭 Filipino</button>
+                            <button onclick="switchLang('mg')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇲🇬 Malagasy</button>
+                            <button onclick="switchLang('si')" class="w-full flex items-center gap-2.5 px-3 py-2 rounded-lg hover:bg-slate-800 text-sm text-slate-300 hover:text-white transition-colors text-left">🇱🇰 සිංහල</button>
+                        </div>
+                    </div>
             <a href="index.html" class="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors">Back to Home</a>
         </div>
     </nav>
