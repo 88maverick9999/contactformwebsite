@@ -231,6 +231,15 @@
                             class="w-full px-4 py-3 rounded-xl bg-slate-800/60 border border-slate-700/50 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all text-sm resize-none"></textarea>
                     </div>
 
+                    <!-- Math verification -->
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">
+                            Quick check: <span id="mathQuestion" class="text-primary font-semibold"></span> <span class="text-red-400">*</span>
+                        </label>
+                        <input type="number" id="mathAnswer" placeholder="Your answer" required
+                            class="w-full px-4 py-3 rounded-xl bg-slate-800/60 border border-slate-700/50 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all text-sm">
+                    </div>
+
                     <!-- hCaptcha -->
                     <div class="flex justify-center">
                         <div class="h-captcha" data-sitekey="e8102cac-1e48-4544-afa6-38f62012294c" data-theme="dark"></div>
@@ -306,6 +315,33 @@
     mobileOverlay.addEventListener('click', closeMenu);
     document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', closeMenu));
 
+    // Math question generator
+    let mathCorrectAnswer = 0;
+    function generateMathQuestion() {
+        const ops = ['+', '-', '*'];
+        const op = ops[Math.floor(Math.random() * ops.length)];
+        let a, b, answer, label;
+        if (op === '+') {
+            a = Math.floor(Math.random() * 20) + 1;
+            b = Math.floor(Math.random() * 20) + 1;
+            answer = a + b;
+            label = a + ' + ' + b + ' = ?';
+        } else if (op === '-') {
+            a = Math.floor(Math.random() * 20) + 10;
+            b = Math.floor(Math.random() * a) + 1;
+            answer = a - b;
+            label = a + ' − ' + b + ' = ?';
+        } else {
+            a = Math.floor(Math.random() * 9) + 2;
+            b = Math.floor(Math.random() * 9) + 2;
+            answer = a * b;
+            label = a + ' × ' + b + ' = ?';
+        }
+        mathCorrectAnswer = answer;
+        document.getElementById('mathQuestion').textContent = 'What is ' + label;
+    }
+    generateMathQuestion();
+
     // Contact form submission
     const form = document.getElementById('contactForm');
     const submitBtn = document.getElementById('submitBtn');
@@ -331,6 +367,14 @@
             return;
         }
 
+        const mathInput = document.getElementById('mathAnswer').value.trim();
+        if (!mathInput) {
+            errorEl.textContent = 'Please answer the math question.';
+            errorEl.classList.remove('hidden');
+            return;
+        }
+        const mathPassed = parseInt(mathInput, 10) === mathCorrectAnswer;
+
         const hcaptchaResponse = document.querySelector('[name="h-captcha-response"]');
         if (!hcaptchaResponse || !hcaptchaResponse.value) {
             errorEl.innerHTML = '<i class="fa-solid fa-triangle-exclamation mr-2"></i> Please complete the captcha verification.';
@@ -345,27 +389,25 @@
         btnIcon.classList.add('hidden');
 
         try {
-            const res = await fetch('https://app.contactformblaster.com/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    name,
-                    email,
-                    subject,
-                    message,
-                    'h-captcha-response': hcaptchaResponse.value,
-                }),
-            });
-
-            const data = await res.json();
-
-            if (res.ok && data.success) {
-                successEl.classList.remove('hidden');
-                form.reset();
-                if (typeof hcaptcha !== 'undefined') hcaptcha.reset();
-            } else {
-                throw new Error(data.error || 'Something went wrong. Please try again.');
+            if (mathPassed) {
+                const res = await fetch('https://app.contactformblaster.com/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        name, email, subject, message,
+                        'h-captcha-response': hcaptchaResponse.value,
+                    }),
+                });
+                const data = await res.json();
+                if (!res.ok || !data.success) {
+                    throw new Error(data.error || 'Something went wrong. Please try again.');
+                }
             }
+            // Always show success (math fail = silent discard)
+            successEl.classList.remove('hidden');
+            form.reset();
+            generateMathQuestion();
+            if (typeof hcaptcha !== 'undefined') hcaptcha.reset();
         } catch (err) {
             errorEl.innerHTML = '<i class="fa-solid fa-triangle-exclamation mr-2"></i> ' + err.message;
             errorEl.classList.remove('hidden');
